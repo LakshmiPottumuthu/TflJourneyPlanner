@@ -5,12 +5,11 @@ This project automates user journeys on the TfL journey planner using Reqnroll, 
 ## Prerequisites
 
 - .NET SDK 10.0
+- Node.js
 - Git
 - VS Code with the following extensions:
   - C# Dev Kit
   - Gherkin Step Navigator
-- A local browser runtime for Playwright
-
 ## Project structure
 
 - `Features/` — Gherkin feature files
