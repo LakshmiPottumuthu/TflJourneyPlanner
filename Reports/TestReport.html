@@ -1,0 +1,1019 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <title></title>
+ <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@78fa5a2421587b8228150e93142e5ba97178e85b/spark/css/spark-style.css" rel="stylesheet" />
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@78fa5a2421587b8228150e93142e5ba97178e85b/spark/js/jsontree.js"></script>
+ <style></style>
+</head>
+<body class="spa  standard">
+ <div class="app">
+  <div class="layout">
+   <div class="header navbar">
+ <div class="vheader">
+  <div class="nav-logo">
+   <a href="#">
+	 <div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/commons/img/logo.png')"></div>
+   </a>
+  </div>
+  <ul class="nav-left">
+   <li class="search-box">
+	<a class="search-toggle" href="#"><i class="search-icon fa fa-search"></i><i class="search-icon-close fa fa-close"></i></a>
+   </li>
+   <li class="search-input">
+    <input id="search-tests" class="form-control" type="text" placeholder="Search...">
+   </li>
+  </ul>
+  <ul class="nav-right">
+   <li class="m-r-10"><a href="#"><span class="badge badge-primary"></span></a></li>
+   <li class="m-r-10">
+    <a href="#"><span class="badge badge-primary">12/10/2026 23:00:25</span></a>
+   </li>
+  </ul>
+ </div>
+</div>
+   <div class="side-nav">
+ <div class="side-nav-inner">
+  <ul class="side-nav-menu">
+   <li class="nav-item dropdown" onclick="toggleView('test-view')">
+    <a id="nav-test" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-list"></i></span>
+    </a>
+   </li>
+   <li class="nav-item dropdown" onclick="toggleView('exception-view')">
+    <a id="nav-exception" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-bug"></i></span>
+    </a>
+   </li> 
+   <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+    <a id="nav-dashboard" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-bar-chart"></i></span>
+    </a>
+   </li>
+  </ul>
+ </div>
+</div>
+
+   <div class="vcontainer">
+    <div class="main-content">
+     
+
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+      <ul class="tools pull-left">
+        <li><a href="#"><span class="font-size-14">Tests</span></a></li>
+      </ul>
+      <ul class="tools text-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+          <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+ <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>  <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>             <div class="dropdown-divider"></div>
+            <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item" status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">No journey results for invalid locations</p>
+            <p class="text-sm">
+              <span>23:00:33</span> / <span>0.02 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">No journey results for invalid locations</h5>
+                  <span class='badge badge-success'>12/10/2026 23:00:33</span>
+                  <span class='badge badge-danger'>12/10/2026 23:00:33</span>
+                  <span class='badge badge-default'>0.02 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">No journey results for invalid locations</p>
+            <p class="text-sm">
+              <span>23:00:34</span> / <span>0.01 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">No journey results for invalid locations</h5>
+                  <span class='badge badge-success'>12/10/2026 23:00:34</span>
+                  <span class='badge badge-danger'>12/10/2026 23:00:34</span>
+                  <span class='badge badge-default'>0.01 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </li>
+        <li class="test-item" status="fail" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Journey cannot be planned without locations</p>
+            <p class="text-sm">
+              <span>23:00:34</span> / <span>50979.91 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">Journey cannot be planned without locations</h5>
+                  <span class='badge badge-success'>12/10/2026 23:00:34</span>
+                  <span class='badge badge-danger'>12/10/2026 23:01:25</span>
+                  <span class='badge badge-default'>50979.91 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:00:50</td>
+        <td>
+Given I open the TfL Journey Planner        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:00:50</td>
+        <td>
+Given I open the TfL Journey Planner        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:00:52</td>
+        <td>
+Given I open the TfL Journey Planner        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:00:53</td>
+        <td>
+When I enter "Leicester Square" as the starting point        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:00:53</td>
+        <td>
+When I enter "InvalidStation123" as the starting point        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:00:54</td>
+        <td>
+When I enter "InvalidPlace999" as the destination        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:00:54</td>
+        <td>
+When I enter "Stratford" as the destination        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:00:54</td>
+        <td>
+When I leave the starting point and destination empty        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:00:57</td>
+        <td>
+When I plan my journey        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:00:57</td>
+        <td>
+When I plan my journey        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Oct 12, 2026 23:01:12</td>
+        <td>
+Then no journey results should be displayed: Timeout 15000ms exceeded.
+Call log:
+  - waiting for Locator("#fav-panel-save") to be visible
+    25 × locator resolved to hidden <button type="button" id="fav-panel-save" class="favourite-tab fav-panel-save-button">…</button>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Oct 12, 2026 23:01:14</td>
+        <td>
+Then the journey should not be planned: Timeout 15000ms exceeded.
+Call log:
+  - waiting for Locator("#fav-panel-save") to be visible        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Oct 12, 2026 23:01:14</td>
+        <td>
+When I plan my journey: Timeout 15000ms exceeded.
+Call log:
+  - waiting for GetByRole(AriaRole.Button, new() { Name = "Plan my journey", Exact = true })
+    - locator resolved to <input type="submit" data-send="true" value="Plan my journey" id="plan-journey-button" class="primary-button plan-journey-button"/>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="mode-icons">…</div> from <div class="from-and-to clearfix">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="mode-icons">…</div> from <div class="from-and-to clearfix">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="mode-icons">…</div> from <div class="from-and-to clearfix">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Oct 12, 2026 23:01:25</td>
+        <td>
+            <textarea readonly class="code-block">
+Timeout 15000ms exceeded.
+Call log:
+  - waiting for Locator("#fav-panel-save") to be visible
+    25 × locator resolved to hidden <button type="button" id="fav-panel-save" class="favourite-tab fav-panel-save-button">…</button>
+System.Private.CoreLib   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls, Nullable`1 timeout) in /_/src/Playwright/Transport/Connection.cs:line 230
+   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal, String title) in /_/src/Playwright/Transport/Connection.cs:line 539
+   at TflJourneyPlanner.Pages.JourneyPlannerPage.AreJourneyResultsDisplayedAsync() in C:\Users\ajayk\OneDrive\Desktop\Lakshmi\TflJourneyPlanner\Pages\JourneyPlannerPage.cs:line 186
+   at TflJourneyPlanner.StepDefinitions.JourneyPlannerSteps.ThenNoJourneyResultsShouldBeDisplayed() in C:\Users\ajayk\OneDrive\Desktop\Lakshmi\TflJourneyPlanner\StepDefinitions\JourneyPlannerSteps.cs:line 100
+   at Reqnroll.Bindings.AsyncMethodHelper.ConvertTaskOfT(Task task, Boolean getValue)
+   at Reqnroll.Bindings.BindingDelegateInvoker.InvokeDelegateAsync(Delegate bindingDelegate, Object[] invokeArgs, ExecutionContextHolder executionContext)
+   at Reqnroll.Bindings.BindingInvoker.InvokeBindingAsync(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, DurationHolder durationHolder)
+   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepMatchAsync(BindingMatch match, Object[] arguments, DurationHolder durationHolder)
+   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepMatchAsync(BindingMatch match, Object[] arguments, DurationHolder durationHolder)
+   at Reqnroll.Infrastructure.TestExecutionEngine.<>c__DisplayClass57_0.<<ExecuteStepAsync>b__7>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Reqnroll.Infrastructure.TestExecutionEngine.<>c__DisplayClass57_0.<<ExecuteStepAsync>g__HandleStepExecutionExceptions|0>d.MoveNext()
+   at Reqnroll.Infrastructure.TestExecutionEngine.OnAfterLastStepAsync()
+   at Reqnroll.TestRunner.CollectScenarioErrorsAsync()
+   at TflJourneyPlanner.Features.TfLJourneyPlannerNavigationFeature.ScenarioCleanupAsync()
+   at TflJourneyPlanner.Features.TfLJourneyPlannerNavigationFeature.NoJourneyResultsForInvalidLocations(String from, String to, String __pickleIndex, String[] exampleTags) in C:\Users\ajayk\OneDrive\Desktop\Lakshmi\TflJourneyPlanner\Features\JourneyPlanner.feature:line 42
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)            </textarea> 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Oct 12, 2026 23:01:25</td>
+        <td>
+            <textarea readonly class="code-block">
+Timeout 15000ms exceeded.
+Call log:
+  - waiting for GetByRole(AriaRole.Button, new() { Name = "Plan my journey", Exact = true })
+    - locator resolved to <input type="submit" data-send="true" value="Plan my journey" id="plan-journey-button" class="primary-button plan-journey-button"/>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="mode-icons">…</div> from <div class="from-and-to clearfix">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="mode-icons">…</div> from <div class="from-and-to clearfix">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="mode-icons">…</div> from <div class="from-and-to clearfix">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+System.Private.CoreLib   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls, Nullable`1 timeout) in /_/src/Playwright/Transport/Connection.cs:line 230
+   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal, String title) in /_/src/Playwright/Transport/Connection.cs:line 539
+   at TflJourneyPlanner.Pages.JourneyPlannerPage.PlanJourneyAsync() in C:\Users\ajayk\OneDrive\Desktop\Lakshmi\TflJourneyPlanner\Pages\JourneyPlannerPage.cs:line 167
+   at TflJourneyPlanner.StepDefinitions.JourneyPlannerSteps.WhenIPlanMyJourney() in C:\Users\ajayk\OneDrive\Desktop\Lakshmi\TflJourneyPlanner\StepDefinitions\JourneyPlannerSteps.cs:line 47
+   at Reqnroll.Bindings.AsyncMethodHelper.ConvertTaskOfT(Task task, Boolean getValue)
+   at Reqnroll.Bindings.BindingDelegateInvoker.InvokeDelegateAsync(Delegate bindingDelegate, Object[] invokeArgs, ExecutionContextHolder executionContext)
+   at Reqnroll.Bindings.BindingInvoker.InvokeBindingAsync(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, DurationHolder durationHolder)
+   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepMatchAsync(BindingMatch match, Object[] arguments, DurationHolder durationHolder)
+   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepMatchAsync(BindingMatch match, Object[] arguments, DurationHolder durationHolder)
+   at Reqnroll.Infrastructure.TestExecutionEngine.<>c__DisplayClass57_0.<<ExecuteStepAsync>b__7>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Reqnroll.Infrastructure.TestExecutionEngine.<>c__DisplayClass57_0.<<ExecuteStepAsync>g__HandleStepExecutionExceptions|0>d.MoveNext()
+   at Reqnroll.Infrastructure.TestExecutionEngine.OnAfterLastStepAsync()
+   at Reqnroll.TestRunner.CollectScenarioErrorsAsync()
+   at TflJourneyPlanner.Features.TfLJourneyPlannerNavigationFeature.ScenarioCleanupAsync()
+   at TflJourneyPlanner.Features.TfLJourneyPlannerNavigationFeature.NoJourneyResultsForInvalidLocations(String from, String to, String __pickleIndex, String[] exampleTags) in C:\Users\ajayk\OneDrive\Desktop\Lakshmi\TflJourneyPlanner\Features\JourneyPlanner.feature:line 42
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)            </textarea> 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Oct 12, 2026 23:01:25</td>
+        <td>
+            <textarea readonly class="code-block">
+Timeout 15000ms exceeded.
+Call log:
+  - waiting for Locator("#fav-panel-save") to be visible
+System.Private.CoreLib   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls, Nullable`1 timeout) in /_/src/Playwright/Transport/Connection.cs:line 230
+   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal, String title) in /_/src/Playwright/Transport/Connection.cs:line 539
+   at TflJourneyPlanner.Pages.JourneyPlannerPage.AreJourneyResultsDisplayedAsync() in C:\Users\ajayk\OneDrive\Desktop\Lakshmi\TflJourneyPlanner\Pages\JourneyPlannerPage.cs:line 186
+   at TflJourneyPlanner.StepDefinitions.JourneyPlannerSteps.ThenJourneyShouldNotBePlanned() in C:\Users\ajayk\OneDrive\Desktop\Lakshmi\TflJourneyPlanner\StepDefinitions\JourneyPlannerSteps.cs:line 117
+   at Reqnroll.Bindings.AsyncMethodHelper.ConvertTaskOfT(Task task, Boolean getValue)
+   at Reqnroll.Bindings.BindingDelegateInvoker.InvokeDelegateAsync(Delegate bindingDelegate, Object[] invokeArgs, ExecutionContextHolder executionContext)
+   at Reqnroll.Bindings.BindingInvoker.InvokeBindingAsync(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, DurationHolder durationHolder)
+   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepMatchAsync(BindingMatch match, Object[] arguments, DurationHolder durationHolder)
+   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepMatchAsync(BindingMatch match, Object[] arguments, DurationHolder durationHolder)
+   at Reqnroll.Infrastructure.TestExecutionEngine.<>c__DisplayClass57_0.<<ExecuteStepAsync>b__7>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Reqnroll.Infrastructure.TestExecutionEngine.<>c__DisplayClass57_0.<<ExecuteStepAsync>g__HandleStepExecutionExceptions|0>d.MoveNext()
+   at Reqnroll.Infrastructure.TestExecutionEngine.OnAfterLastStepAsync()
+   at Reqnroll.TestRunner.CollectScenarioErrorsAsync()
+   at TflJourneyPlanner.Features.TfLJourneyPlannerNavigationFeature.ScenarioCleanupAsync()
+   at TflJourneyPlanner.Features.TfLJourneyPlannerNavigationFeature.JourneyCannotBePlannedWithoutLocations() in C:\Users\ajayk\OneDrive\Desktop\Lakshmi\TflJourneyPlanner\Features\JourneyPlanner.feature:line 55
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)            </textarea> 
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Plan a journey and validate walking and cycling times</p>
+            <p class="text-sm">
+              <span>23:01:31</span> / <span>0 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">Plan a journey and validate walking and cycling times</h5>
+                  <span class='badge badge-success'>12/10/2026 23:01:31</span>
+                  <span class='badge badge-danger'>12/10/2026 23:01:31</span>
+                  <span class='badge badge-default'>0 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Update journey preferences to minimise walking</p>
+            <p class="text-sm">
+              <span>23:01:31</span> / <span>0 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">Update journey preferences to minimise walking</h5>
+                  <span class='badge badge-success'>12/10/2026 23:01:31</span>
+                  <span class='badge badge-danger'>12/10/2026 23:01:31</span>
+                  <span class='badge badge-default'>0 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </li>
+        <li class="test-item" status="fail" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">No journey results for invalid locations</p>
+            <p class="text-sm">
+              <span>23:01:31</span> / <span>53266.62 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">No journey results for invalid locations</h5>
+                  <span class='badge badge-success'>12/10/2026 23:01:31</span>
+                  <span class='badge badge-danger'>12/10/2026 23:02:25</span>
+                  <span class='badge badge-default'>53266.62 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:01:46</td>
+        <td>
+Given I open the TfL Journey Planner        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:01:47</td>
+        <td>
+Given I open the TfL Journey Planner        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:01:48</td>
+        <td>
+When I enter "InvalidStation123" as the starting point        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:01:48</td>
+        <td>
+Given I open the TfL Journey Planner        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:01:53</td>
+        <td>
+When I enter "InvalidPlace999" as the destination        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:01:56</td>
+        <td>
+When I select "Leicester Square Underground Station" as the starting point        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:01:57</td>
+        <td>
+When I select "Leicester Square Underground Station" as the starting point        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:01:59</td>
+        <td>
+When I plan my journey        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:02:02</td>
+        <td>
+When I select "Covent Garden Underground Station" as the destination        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:02:06</td>
+        <td>
+When I plan my journey        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:02:10</td>
+        <td>
+When I select "Covent Garden Underground Station" as the destination        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:02:13</td>
+        <td>
+When I plan my journey        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Oct 12, 2026 23:02:15</td>
+        <td>
+Then no journey results should be displayed: Timeout 15000ms exceeded.
+Call log:
+  - waiting for Locator("#fav-panel-save") to be visible
+    19 × locator resolved to hidden <button type="button" id="fav-panel-save" class="favourite-tab fav-panel-save-button">…</button>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:02:16</td>
+        <td>
+When I edit journey preferences        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:02:17</td>
+        <td>
+When I select routes with least walking        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:02:18</td>
+        <td>
+When I update the journey        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Oct 12, 2026 23:02:19</td>
+        <td>
+Then the updated journey time should be valid: Error: strict mode violation: Locator(".carousel-wrap").First.Locator("//span[@class='time']/span[1]") resolved to 3 elements:
+    1) <span class="visually-hidden">Depart at: </span> aka GetByRole(AriaRole.Button, new() { Name = "Option 1: walking, Piccadilly" })
+    2) <span class="visually-hidden">Depart at: </span> aka GetByRole(AriaRole.Button, new() { Name = "Option 2: walking, Piccadilly" })
+    3) <span class="visually-hidden">Depart at: </span> aka GetByRole(AriaRole.Button, new() { Name = "Option 3: walking, Piccadilly" })
+
+Call log:
+  - waiting for Locator(".carousel-wrap").First.Locator("//span[@class='time']/span[1]")        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Oct 12, 2026 23:02:23</td>
+        <td>
+            <textarea readonly class="code-block">
+Error: strict mode violation: Locator(".carousel-wrap").First.Locator("//span[@class='time']/span[1]") resolved to 3 elements:
+    1) <span class="visually-hidden">Depart at: </span> aka GetByRole(AriaRole.Button, new() { Name = "Option 1: walking, Piccadilly" })
+    2) <span class="visually-hidden">Depart at: </span> aka GetByRole(AriaRole.Button, new() { Name = "Option 2: walking, Piccadilly" })
+    3) <span class="visually-hidden">Depart at: </span> aka GetByRole(AriaRole.Button, new() { Name = "Option 3: walking, Piccadilly" })
+
+Call log:
+  - waiting for Locator(".carousel-wrap").First.Locator("//span[@class='time']/span[1]")
+System.Private.CoreLib   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls, Nullable`1 timeout) in /_/src/Playwright/Transport/Connection.cs:line 230
+   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal, String title) in /_/src/Playwright/Transport/Connection.cs:line 539
+   at Microsoft.Playwright.Core.Frame.InnerTextAsync(String selector, FrameInnerTextOptions options) in /_/src/Playwright/Core/Frame.cs:line 435
+   at TflJourneyPlanner.Pages.JourneyPlannerPage.GetUpdatedJourneyTimesAsync() in C:\Users\ajayk\OneDrive\Desktop\Lakshmi\TflJourneyPlanner\Pages\JourneyPlannerPage.cs:line 290
+   at TflJourneyPlanner.StepDefinitions.JourneyPlannerSteps.ThenTheUpdatedJourneyTimeShouldBeValid() in C:\Users\ajayk\OneDrive\Desktop\Lakshmi\TflJourneyPlanner\StepDefinitions\JourneyPlannerSteps.cs:line 141
+   at Reqnroll.Bindings.AsyncMethodHelper.ConvertTaskOfT(Task task, Boolean getValue)
+   at Reqnroll.Bindings.BindingDelegateInvoker.InvokeDelegateAsync(Delegate bindingDelegate, Object[] invokeArgs, ExecutionContextHolder executionContext)
+   at Reqnroll.Bindings.BindingInvoker.InvokeBindingAsync(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, DurationHolder durationHolder)
+   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepMatchAsync(BindingMatch match, Object[] arguments, DurationHolder durationHolder)
+   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepMatchAsync(BindingMatch match, Object[] arguments, DurationHolder durationHolder)
+   at Reqnroll.Infrastructure.TestExecutionEngine.<>c__DisplayClass57_0.<<ExecuteStepAsync>b__7>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Reqnroll.Infrastructure.TestExecutionEngine.<>c__DisplayClass57_0.<<ExecuteStepAsync>g__HandleStepExecutionExceptions|0>d.MoveNext()
+   at Reqnroll.Infrastructure.TestExecutionEngine.OnAfterLastStepAsync()
+   at Reqnroll.TestRunner.CollectScenarioErrorsAsync()
+   at TflJourneyPlanner.Features.TfLJourneyPlannerNavigationFeature.ScenarioCleanupAsync()
+   at TflJourneyPlanner.Features.TfLJourneyPlannerNavigationFeature.UpdateJourneyPreferencesToMinimiseWalking() in C:\Users\ajayk\OneDrive\Desktop\Lakshmi\TflJourneyPlanner\Features\JourneyPlanner.feature:line 22
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)            </textarea> 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>Oct 12, 2026 23:02:25</td>
+        <td>
+            <textarea readonly class="code-block">
+Timeout 15000ms exceeded.
+Call log:
+  - waiting for Locator("#fav-panel-save") to be visible
+    19 × locator resolved to hidden <button type="button" id="fav-panel-save" class="favourite-tab fav-panel-save-button">…</button>
+System.Private.CoreLib   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls, Nullable`1 timeout) in /_/src/Playwright/Transport/Connection.cs:line 230
+   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal, String title) in /_/src/Playwright/Transport/Connection.cs:line 539
+   at TflJourneyPlanner.Pages.JourneyPlannerPage.AreJourneyResultsDisplayedAsync() in C:\Users\ajayk\OneDrive\Desktop\Lakshmi\TflJourneyPlanner\Pages\JourneyPlannerPage.cs:line 186
+   at TflJourneyPlanner.StepDefinitions.JourneyPlannerSteps.ThenNoJourneyResultsShouldBeDisplayed() in C:\Users\ajayk\OneDrive\Desktop\Lakshmi\TflJourneyPlanner\StepDefinitions\JourneyPlannerSteps.cs:line 100
+   at Reqnroll.Bindings.AsyncMethodHelper.ConvertTaskOfT(Task task, Boolean getValue)
+   at Reqnroll.Bindings.BindingDelegateInvoker.InvokeDelegateAsync(Delegate bindingDelegate, Object[] invokeArgs, ExecutionContextHolder executionContext)
+   at Reqnroll.Bindings.BindingInvoker.InvokeBindingAsync(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, DurationHolder durationHolder)
+   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepMatchAsync(BindingMatch match, Object[] arguments, DurationHolder durationHolder)
+   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepMatchAsync(BindingMatch match, Object[] arguments, DurationHolder durationHolder)
+   at Reqnroll.Infrastructure.TestExecutionEngine.<>c__DisplayClass57_0.<<ExecuteStepAsync>b__7>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Reqnroll.Infrastructure.TestExecutionEngine.<>c__DisplayClass57_0.<<ExecuteStepAsync>g__HandleStepExecutionExceptions|0>d.MoveNext()
+   at Reqnroll.Infrastructure.TestExecutionEngine.OnAfterLastStepAsync()
+   at Reqnroll.TestRunner.CollectScenarioErrorsAsync()
+   at TflJourneyPlanner.Features.TfLJourneyPlannerNavigationFeature.ScenarioCleanupAsync()
+   at TflJourneyPlanner.Features.TfLJourneyPlannerNavigationFeature.NoJourneyResultsForInvalidLocations(String from, String to, String __pickleIndex, String[] exampleTags) in C:\Users\ajayk\OneDrive\Desktop\Lakshmi\TflJourneyPlanner\Features\JourneyPlanner.feature:line 42
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)            </textarea> 
+        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify complete access information at Covent Garden Underground Station</p>
+            <p class="text-sm">
+              <span>23:02:28</span> / <span>26422.73 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">Verify complete access information at Covent Garden Underground Station</h5>
+                  <span class='badge badge-success'>12/10/2026 23:02:28</span>
+                  <span class='badge badge-danger'>12/10/2026 23:02:54</span>
+                  <span class='badge badge-default'>26422.73 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:02:35</td>
+        <td>
+Given I open the TfL Journey Planner        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:02:36</td>
+        <td>
+Then walking and cycling journey times should be available        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:02:41</td>
+        <td>
+When I select "Leicester Square Underground Station" as the starting point        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:02:43</td>
+        <td>
+When I select "Covent Garden Underground Station" as the destination        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:02:45</td>
+        <td>
+When I plan my journey        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:02:46</td>
+        <td>
+When I edit journey preferences        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:02:47</td>
+        <td>
+When I select routes with least walking        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:02:48</td>
+        <td>
+When I update the journey        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:02:49</td>
+        <td>
+When I view details of the first journey option        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:02:49</td>
+        <td>
+Then the complete access information should be displayed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:02:53</td>
+        <td>
+Scenario passed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Oct 12, 2026 23:02:54</td>
+        <td>
+Scenario passed        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="test-content scrollable">
+    <div class="test-content-tools">
+      <ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+    </div>
+    <div class="test-content-detail"><div class="detail-body"></div></div>
+  </div>
+</div>
+
+
+<div class="test-wrapper row view exception-view attributes-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+      <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+      <ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+    </div>
+    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item">
+          <div class="test-detail">
+            <span class="meta">
+ <span class='badge log badge-danger'>2</span>             </span>
+            <p class="name">System.TimeoutException</p>
+            <p class="duration text-sm">2 tests</p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="info">
+              <h4>System.TimeoutException</h4>
+ <span status="fail" class='badge log badge-danger'>2 failed</span>             </div>
+            <table class='table table-sm mt-4'>
+              <thead>
+                <tr>
+                  <th class="status-col">Status</th>
+                  <th class="timestamp-col">Timestamp</th>
+                  <th>TestName</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tag-test-status" status="fail">
+                  <td><span class="badge log fail-bg">Fail</span></td>
+                  <td>23:00:34</td>
+                  <td>
+                    <a href="#" class="linked" test-id='3' id='3'>Journey cannot be planned without locations</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="fail">
+                  <td><span class="badge log fail-bg">Fail</span></td>
+                  <td>23:01:31</td>
+                  <td>
+                    <a href="#" class="linked" test-id='6' id='6'>No journey results for invalid locations</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+        <li class="test-item">
+          <div class="test-detail">
+            <span class="meta">
+ <span class='badge log badge-danger'>1</span>             </span>
+            <p class="name">Microsoft.Playwright.PlaywrightException</p>
+            <p class="duration text-sm">1 tests</p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="info">
+              <h4>Microsoft.Playwright.PlaywrightException</h4>
+ <span status="fail" class='badge log badge-danger'>1 failed</span>             </div>
+            <table class='table table-sm mt-4'>
+              <thead>
+                <tr>
+                  <th class="status-col">Status</th>
+                  <th class="timestamp-col">Timestamp</th>
+                  <th>TestName</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tag-test-status" status="fail">
+                  <td><span class="badge log fail-bg">Fail</span></td>
+                  <td>23:01:31</td>
+                  <td>
+                    <a href="#" class="linked" test-id='6' id='6'>No journey results for invalid locations</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="test-content scrollable">
+    <div class="test-content-detail">
+      <div class="detail-body"></div>
+    </div>
+  </div>
+</div>
+     
+
+<div class="container-fluid p-4 view dashboard-view">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Started</p>
+          <h3>12/10/2026 23:00:25</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Ended</p>
+          <h3>12/10/2026 23:02:54</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-pass">Tests Passed</p>
+          <h3>5</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-fail">Tests Failed</p>
+          <h3>2</h3>
+      </div></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Tests</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='parent-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='0%'>
+            <b>5</b> tests passed
+            </small>
+          </div>
+          <div>
+            <small data-tooltip='0%'><b>2</b> tests failed, 
+            <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Log events</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='events-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='0%'><b>37</b> events passed</small></div>
+          <div>
+            <small data-tooltip='0%'><b>10</b> events failed, 
+            <b data-tooltip='%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row"><div class="col-md-12">
+    <div class="card"><div class="card-header"><p>Timeline</p></div>
+      <div class="card-body pt-0"><div>
+        <canvas id="timeline" height="120"></canvas>
+      </div></div>
+    </div>
+  </div></div>
+  <script>
+	var timeline = { "No journey results for invalid locations":0.0162,"No journey results for invalid locations":0.01,"Journey cannot be planned without locations":50979.9131,"Plan a journey and validate walking and cycling times":0.0036,"Update journey preferences to minimise walking":0.0031,"No journey results for invalid locations":53266.6238,"Verify complete access information at Covent Garden Underground Station":26422.726 };
+  </script>
+  <div class="row">
+  </div>
+</div>
+<script>
+  var statusGroup = {
+    parentCount: 7,
+    childCount: 0,
+    grandChildCount: 0,
+    eventsCount: 47,
+
+passParent:5,failParent:2,warningParent:0,skipParent:0,    
+passChild:0,failChild:0,warningChild:0,skipChild:0,infoChild:0,    
+passGrandChild:0,failGrandChild:0,warningGrandChild:0,skipGrandChild:0,infoGrandChild:0,    
+passEvents:37,failEvents:10,warningEvents:0,skipEvents:0,infoEvents:0,  };
+</script>
+
+    </div>
+   </div>
+  </div>
+ </div>
+ <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/spark/js/spark-script.js"></script>
+<script type='text/javascript'></script>
+</body>
+</html>
